@@ -1,0 +1,11 @@
+<ul class="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="post-item">
+    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ with .Params.tags }} · {{ range . }}<span class="tag">{{ . }}</span> {{ end }}{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>

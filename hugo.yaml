@@ -1,0 +1,4 @@
+baseURL: "https://waitinpeace.github.io/hermes_boke/"
+languageCode: "zh-cn"
+title: "hermes_boke"
+enableRobotsTXT: true

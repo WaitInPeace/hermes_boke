@@ -1,0 +1,29 @@
+:root { color-scheme: light dark; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.7;
+  color: var(--fg, #222);
+  background: var(--bg, #fff);
+}
+a { color: #0969da; }
+.site-header { border-bottom: 1px solid #ddd; padding-bottom: .5rem; margin-bottom: 1.5rem; }
+.site-title { font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+.post-list { list-style: none; padding: 0; }
+.post-item { margin-bottom: 1rem; }
+.post-title { font-weight: 600; }
+.post-meta { color: #666; font-size: .85rem; }
+.tag { background: #eaeef2; border-radius: 4px; padding: 0 .4em; margin-right: .3em; }
+.post-content img { max-width: 100%; }
+pre { overflow-x: auto; background: #f6f8fa; padding: .8rem; border-radius: 6px; }
+.site-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: .85rem; color: #666; }
+@media (prefers-color-scheme: dark) {
+  body { color: #ddd; background: #111; }
+  a { color: #58a6ff; }
+  .post-meta, .site-footer { color: #999; }
+  pre { background: #161b22; }
+  .site-header, .site-footer { border-color: #333; }
+  .tag { background: #30363d; }
+}
