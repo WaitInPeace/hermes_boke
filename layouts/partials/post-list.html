@@ -1,5 +1,6 @@
+{{ $pages := cond .IsHome .Site.RegularPages .Pages }}
 <ul class="post-list">
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range $pages.ByDate.Reverse }}
   <li class="post-item">
     <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
     <div class="post-meta">
